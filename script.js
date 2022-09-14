@@ -62,6 +62,7 @@ const validate = (key) => {
   if (key === questionText[userText.length - 1]) {
     return true;
   }
+  errorCount++;
   return false;
 };
 
@@ -92,7 +93,7 @@ const gameOver = () => {
   addHistory(questionText, timeTaken, errorCount);
 
   // restart everything
-  startTime = 0;
+  startTime = null;
   errorCount = 0;
   userText = "";
   display.classList.add("inactive");
