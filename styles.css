@@ -23,6 +23,7 @@ body {
   justify-content: center;
   color: white;
   font-size: 25px;
+  padding: 10px 20px;
   border-radius: 15px;
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -83,7 +84,14 @@ body {
 #show-time {
   text-align: center;
   color: white;
-  margin: 10px 0;
+  margin: 15px auto;
+}
+.show-time {
+  margin: 15px auto;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
 }
 
 .green {
@@ -197,6 +205,9 @@ button {
   .box-container {
     padding: 0 20px;
     width: 100%;
+  }
+  #question {
+    padding: 5px 10px;
   }
   .card {
     flex-direction: column;
