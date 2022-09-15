@@ -73,7 +73,12 @@ const gameOver = () => {
   // so total time taken is current time - start time
   const finishTime = new Date().getTime();
   const timeTaken = (finishTime - startTime) / 1000;
-
+  //count word
+  const letterCount = display.innerText;
+  const word = letterCount.split("▪").length;
+  wordCountTime = parseInt((word / timeTaken) * 60);
+  console.log(wordCountTime);
+  console.log(word);
   // show result modal
   resultModal.innerHTML = "";
   resultModal.classList.toggle("hidden");
@@ -87,6 +92,7 @@ const gameOver = () => {
     <h1>Finished!</h1>
     <p>You took: <span class="bold">${parseInt(timeTaken)}</span> seconds</p>
     <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
+    <p>You Word Count Is <span class="bold green">${wordCountTime}</span> Per Minute</p>
     <button onclick="closeModal()">Close</button>
   `;
 
@@ -118,12 +124,14 @@ const start = () => {
     if (count === 0) {
       // -------------- START TYPING -----------------
       document.addEventListener("keydown", typeController);
+
       countdownOverlay.style.display = "none";
       display.classList.remove("inactive");
       startTime = new Date().getTime();
       clearInterval(startCountdown);
     }
     count--;
+    e.preventDefault;
   }, 1000);
 };
 
