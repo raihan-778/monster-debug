@@ -12,117 +12,221 @@
     />
   </head>
   <body>
-    <h1>Welcome To JavaScript Blog</h1>
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingOne">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseOne"
-            aria-expanded="false"
-            aria-controls="flush-collapseOne"
-          >
-            What Is The Difference Between Local Storage, Session Storage
-          </button>
-        </h2>
-        <div
-          id="flush-collapseOne"
-          class="accordion-collapse collapse"
-          aria-labelledby="flush-headingOne"
-          data-bs-parent="#accordionFlushExample"
-        >
-          <div class="accordion-body">
-            <strong>Local Storage:</strong> This read-only interface property
-            provides access to the Document’s local storage object, the stored
-            data is stored across browser sessions.As it is not session-based,
-            it must be deleted via javascript or manually. Local storage has 4
-            methods:
-            <ol>
-              <li>1.localStorage.setItem(key, value)</li>
-              <li>2.localStorage.getItem(key)</li>
-              <li>3.localStorage.removeItem(key)</li>
-              <li>localStorage.clear()</li>
-            </ol>
-            <br />
-            <strong>Session Storage:</strong> Session Storage objects can be
-            accessed using the sessionStorage read-only property. The difference
-            between sessionStorage and localStorage is that localStorage data
-            does not expire, whereas sessionStorage data is cleared when the
-            page session ends. A unique page session gets created once a
-            document is loaded in a browser tab. Page sessions are valid for
-            only one tab at a time. Pages are only saved for the amount of time
-            that the tab or the browser is open; they do not persist after the
-            page reloads and restores.
+    <section class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Welcome To JavaScript Blog</h1>
+
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  What Is The Difference Between Local Storage, Session Storage
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <strong>Local Storage:</strong> This read-only interface
+                  property provides access to the Document’s local storage
+                  object, the stored data is stored across browser sessions.As
+                  it is not session-based, it must be deleted via javascript or
+                  manually. Local storage has 4 methods:
+                  <ol>
+                    <li>1.localStorage.setItem(key, value)</li>
+                    <li>2.localStorage.getItem(key)</li>
+                    <li>3.localStorage.removeItem(key)</li>
+                    <li>localStorage.clear()</li>
+                  </ol>
+                  <br />
+                  <strong>Session Storage:</strong> Session Storage objects can
+                  be accessed using the sessionStorage read-only property. The
+                  difference between sessionStorage and localStorage is that
+                  localStorage data does not expire, whereas sessionStorage data
+                  is cleared when the page session ends. A unique page session
+                  gets created once a document is loaded in a browser tab. Page
+                  sessions are valid for only one tab at a time. Pages are only
+                  saved for the amount of time that the tab or the browser is
+                  open; they do not persist after the page reloads and restores.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button
+                  class="accordion-button collapsed fs-3 fw-400"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  What Is The Difference Between Global Scope And Block Scope?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <strong>Global Scope:</strong>
+                  The variables defined outside of any function or curly
+                  brackets are known as global variables and have global scope.
+                  Global scope means that the variables can be accessed from any
+                  part of that program, any function or conditional state can
+                  access that variable. <br />
+                  <strong>Block Scope:</strong>
+                  The block scope can be defined as the scope of the variables
+                  inside the curly brackets {}. Now, these curly brackets can be
+                  of loops, or conditional statements, or something else. You
+                  are only allowed to refer to these variables from within the
+                  curly brackets {}. Imagine a nested situation: A block of code
+                  enclosed with curly brackets{} containing some block
+                  variables. <br />
+                  let & const are also called as block scope that is they are
+                  accessible within that particular block. Here let is used for
+                  variable which can be changed as we proceed through the
+                  program whereas const is used for a variable which doesn’t
+                  change till the program ends, that is it remains constant
+                  throughout the program.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  How Does Event Loop work in JavaScript?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  JavaScript has a runtime model based on an
+                  <strong>event loop</strong>, which is responsible for
+                  executing the code, collecting and processing events, and
+                  executing queued sub-tasks. <br />
+                  we new that javascript is a single threaded language.It can
+                  process a singe task at a time.But in browser on which
+                  javascript code is run with the help of engine, in chrome
+                  browser which called V8 enging.This can handle multiple tasks
+                  at a time. In this multiple tasking process the event loop
+                  concept will come. <br />
+                  The <strong>event loop</strong> is the secret behind
+                  JavaScript’s asynchronous programming. JS executes all
+                  operations on a single thread, but using a few smart data
+                  structures, it gives us the illusion of multi-threading. Let’s
+                  take a look at what happens on the back-end.
+                  <br />
+                  The
+                  <mark>call stack</mark>
+                  is responsible for keeping track of all the operations in line
+                  to be executed. Whenever a function is finished, it is popped
+                  from the stack.
+                  <br />
+                  The <mark>event queue</mark> is responsible for sending new
+                  functions to the stack for processing. It follows the queue
+                  data structure to maintain the correct sequence in which all
+                  operations should be sent for execution Whenever an async
+                  function is called, it is sent to a browser API. These are
+                  APIs built into the browser. Based on the command received
+                  from the call stack, the API starts its own single-threaded
+                  operation.
+                  <br />
+                  An example of this is the <mark>setTimeout method</mark>. When
+                  a setTimeout operation is processed in the stack, it is sent
+                  to the corresponding API which waits till the specified time
+                  to send this operation back in for processing.
+                  <br />
+                  Where does it send the operation? The
+                  <mark>event queue</mark>. Hence, we have a cyclic system for
+                  running async operations in JavaScript. The language itself is
+                  single-threaded, but the browser APIs act as separate threads.
+                  <br />
+                  The <strong>event loop</strong> facilitates this process; it
+                  constantly checks whether or not the call stack is empty. If
+                  it is empty, new functions are added from the event queue. If
+                  it is not, then the current function call is processed.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  How Many Types Of Undefine We Can Get In JavaScript
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <h4 class="fw-3">
+                    In approximate eight ways we may get undefine
+                  </h4>
+                  <ol>
+                    <li>
+                      Variable declared without innitialization wiil give
+                      undefine.
+                    </li>
+                    <li>A function declared without return will undefine.</li>
+                    <li>
+                      function with parameters without assigning any value will
+                      return undefine.
+                    </li>
+                    <li>
+                      If you do not give any value for return in a function will
+                      give you undefine as value.
+                    </li>
+                    <li>
+                      If you want to access any property which is not exist in a
+                      object will give undefine.
+                    </li>
+                    <li>
+                      when we want to get any objects or element of an array
+                      using index number which is not exist will give you
+                      undefine.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingTwo">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseTwo"
-            aria-expanded="false"
-            aria-controls="flush-collapseTwo"
-          >
-            What Is The Difference Between Global Scope And Block Scope?
-          </button>
-        </h2>
-        <div
-          id="flush-collapseTwo"
-          class="accordion-collapse collapse"
-          aria-labelledby="flush-headingTwo"
-          data-bs-parent="#accordionFlushExample"
-        >
-          <div class="accordion-body">
-            <strong>Global Scope:</strong>
-            The variables defined outside of any function or curly brackets are
-            known as global variables and have global scope. Global scope means
-            that the variables can be accessed from any part of that program,
-            any function or conditional state can access that variable. <br />
-            <strong>Block Scope:</strong>
-            The block scope can be defined as the scope of the variables inside
-            the curly brackets {}. Now, these curly brackets can be of loops, or
-            conditional statements, or something else. You are only allowed to
-            refer to these variables from within the curly brackets {}. Imagine
-            a nested situation: A block of code enclosed with curly brackets{}
-            containing some block variables.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingThree">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseThree"
-            aria-expanded="false"
-            aria-controls="flush-collapseThree"
-          >
-            Accordion Item #3
-          </button>
-        </h2>
-        <div
-          id="flush-collapseThree"
-          class="accordion-collapse collapse"
-          aria-labelledby="flush-headingThree"
-          data-bs-parent="#accordionFlushExample"
-        >
-          <div class="accordion-body">
-            Placeholder content for this accordion, which is intended to
-            demonstrate the <code>.accordion-flush</code> class. This is the
-            third item's accordion body. Nothing more exciting happening here in
-            terms of content, but just filling up the space to make it look, at
-            least at first glance, a bit more representative of how this would
-            look in a real-world application.
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
