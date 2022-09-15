@@ -17,11 +17,11 @@
         <div class="col">
           <h1>Welcome To JavaScript Blog</h1>
 
-          <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion accordion-flush" id="flush-one">
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingOne">
                 <button
-                  class="accordion-button collapsed"
+                  class="accordion-button collapsed fw-bold fst-italic"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseOne"
@@ -37,7 +37,7 @@
                 aria-labelledby="flush-headingOne"
                 data-bs-parent="#accordionFlushExample"
               >
-                <div class="accordion-body">
+                <div class="accordion-body fw-semibold fst-italic">
                   <strong>Local Storage:</strong> This read-only interface
                   property provides access to the Document’s local storage
                   object, the stored data is stored across browser sessions.As
@@ -65,7 +65,7 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingTwo">
                 <button
-                  class="accordion-button collapsed fs-3 fw-400"
+                  class="accordion-button collapsed fst-italic fw-bold"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseTwo"
@@ -77,11 +77,11 @@
               </h2>
               <div
                 id="flush-collapseTwo"
-                class="accordion-collapse collapse"
+                class="accordion-collapse collapse fst-italic fw-bold"
                 aria-labelledby="flush-headingTwo"
                 data-bs-parent="#accordionFlushExample"
               >
-                <div class="accordion-body">
+                <div class="accordion-body fw-semibold fst-italic">
                   <strong>Global Scope:</strong>
                   The variables defined outside of any function or curly
                   brackets are known as global variables and have global scope.
@@ -108,7 +108,7 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingThree">
                 <button
-                  class="accordion-button collapsed"
+                  class="accordion-button collapsed fst-italic fw-bold"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseThree"
@@ -124,7 +124,7 @@
                 aria-labelledby="flush-headingThree"
                 data-bs-parent="#accordionFlushExample"
               >
-                <div class="accordion-body">
+                <div class="accordion-body fw-semibold fst-italic">
                   JavaScript has a runtime model based on an
                   <strong>event loop</strong>, which is responsible for
                   executing the code, collecting and processing events, and
@@ -174,34 +174,34 @@
               </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingTwo">
+              <h2 class="accordion-header" id="flush-headingFour">
                 <button
-                  class="accordion-button collapsed"
+                  class="accordion-button collapsed fst-italic fw-bold"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseTwo"
+                  data-bs-target="#flush-collapseFour"
                   aria-expanded="false"
-                  aria-controls="flush-collapseTwo"
+                  aria-controls="flush-collapseFour"
                 >
                   How Many Types Of Undefine We Can Get In JavaScript
                 </button>
               </h2>
               <div
-                id="flush-collapseTwo"
+                id="flush-collapseFour"
                 class="accordion-collapse collapse"
-                aria-labelledby="flush-headingTwo"
+                aria-labelledby="flush-headingFour"
                 data-bs-parent="#accordionFlushExample"
               >
-                <div class="accordion-body">
-                  <h4 class="fw-3">
-                    In approximate eight ways we may get undefine
-                  </h4>
+                <div class="accordion-body fw-semibold fst-italic">
+                  <h4 class="">In approximate ways we may get undefine</h4>
                   <ol>
                     <li>
                       Variable declared without innitialization wiil give
                       undefine.
                     </li>
-                    <li>A function declared without return will undefine.</li>
+                    <li>
+                      A function declared without return will give undefine.
+                    </li>
                     <li>
                       function with parameters without assigning any value will
                       return undefine.
